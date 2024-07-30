@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Job </title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+     <!-- header  -->
+     <header class=" w-full bg-indigo-700 h-20 ">
+        <div class="md:w-5/6 h-5/6 md:p-4 mx-auto  flex items-center justify-around ">
+            <!-- logo -->
+            <h1 class="whitespace-nowrap text-white w-fit p-3   m-1 font-extrabold md:text-2xl text-sm capitalize">
+                react jobs
+            </h1>
+
+            <!-- nav section -->
+            <nav class=" text-white  md:w-6/12 p-1 m-1 md:ml-80 ">
+                <ul class="flex list-none justify-evenly item-center text-white text-sm  md:w-10/12 md:mx-auto p-2 m-1">
+                    <li class=" m-1 w-auto hover:shadow-indigo-400 shadow-sm p-1 leading-1   md:h-8  rounded hover:bg-black">
+                        <a href="index.html" class="font-semibold md:p-2 md:m-1  capitalize text-sm ">home</a>
+                    </li>
+                    <li class=" m-1 w-auto hover:shadow-indigo-400 shadow-sm p-1 leading-1  md:h-8  rounded hover:bg-black">
+                        <a href="jobs.html" class="font-semibold md:p-2 md:m-1  capitalize text-sm ">jobs</a>
+                    </li>
+                    <li class=" m-1 w-auto hover:shadow-indigo-400 shadow-sm p-1 leading-1  md:h-8  rounded hover:bg-black">
+                        <a href="http://" class="font-semibold md:p-2 md:m-1  capitalize whitespace-nowrap  text-sm ">add jobs</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            
+        </div>
+
+    </header>
+
+    <main class=" bg-indigo-300 p-2">
+        <section class="w-full h-5/6 mb-4 bg-indigo-300 ">
+            <div class="w-2/3 h-20 mx-auto m-0 p-3">
+                <p class=" h-3/4  text-indigo-700 capitalize text-center text-3xl leading-[1.6] font-bold p-2">
+                   add job
+                </p>
+            </div>
+
+            <div class="mb-3">
+                <form class="w-11/12  mb-7 md:w-[600px]  bg-white shadow-md rounded-md h-full  mx-auto flex flex-col m-4 p-4">
+                
+                    <div class="mb-2 flex flex-col">
+                        <label for="type" class="capitalize m-2  text-gray-700 rounded p-1 text-left font-bold"> job type</label>
+                        <select
+                            name="type" 
+                            id="type" 
+                            class="border border-indigo-500  m-2 p-2 rounded outline-none"
+                            required
+                            >
+                            <option value="Full-Time">Full-Time</option>
+                            <option value="Part-Time">Part-Time</option>
+                            <option value="Remote">Remote</option>
+                            <option value="Internship">Internship</option>
+                        </select>
+                    </div>
+                    <div class="mb-2 flex flex-col">
+                        <label for="title" class="capitalize m-2  text-gray-700 rounded p-1 text-left font-bold"> job listing name</label>
+                        <input
+                            type="text"
+                            name="title" 
+                            id="title" 
+                            class="capitalize border border-indigo-500  m-2 p-2 rounded outline-none"
+                            required
+                            placeholder=" senior react developer"
+                            >
+                            
+                        </input>
+                    </div>
+                    <div class="mb-2 flex flex-col">
+                        <label for="description" class="capitalize m-2  text-gray-700 rounded p-1 text-left font-bold"> description</label>
+                      
+
+                        <textarea 
+                            name="description" 
+                            id="description"
+                            required
+                            class="capitalize max-w-full max-h-14 border border-indigo-500  m-2 p-2 rounded outline-none"
+                            placeholder="Add any job duties, expectations, requirements, etc"></textarea>
+                    </div>
+                    <div class="mb-2 flex flex-col">
+                        <label for="salary" class="capitalize m-2  text-gray-700 rounded p-1 text-left font-bold"> job type</label>
+                        <select
+                            name="salary" 
+                            id="salary" 
+                            class="border border-indigo-500  m-2 p-2 rounded outline-none"
+                            required
+                            >
+                                <option value="Under $50K">Under $50K</option>
+                                <option value="$50K - 60K">$50K - $60K</option>
+                                <option value="$60K - 70K">$60K - $70K</option>
+                                <option value="$70K - 80K">$70K - $80K</option>
+                                <option value="$80K - 90K">$80K - $90K</option>
+                                <option value="$90K - 100K">$90K - $100K</option>
+                                <option value="$100K - 125K">$100K - $125K</option>
+                                <option value="$125K - 150K">$125K - $150K</option>
+                                <option value="$150K - 175K">$150K - $175K</option>
+                                <option value="$175K - 200K">$175K - $200K</option>
+                                <option value="Over $200K">Over $200K</option>
+                        </select>
+                    </div> 
+                    <div class="mb-2 flex flex-col">
+                        <label for="location" class="capitalize m-2  text-gray-700 rounded p-1 text-left font-bold"> location</label>
+                        <input 
+                            name="location" 
+                            id="location"
+                            required
+                            class="capitalize max-w-full max-h-14 border border-indigo-500  m-2 p-2 rounded outline-none"
+                            placeholder='company location'/>
+                    </div>
+                    
+                    <h3 class="text-2xl mb-5 p2 m-2 text-indigo-600">Company Info</h3>
+
+                    <div class="mb-2 flex flex-col">
+                        <label for="company" class="capitalize m-2  text-gray-700 rounded p-1 text-left font-bold"> company</label>
+                        <input 
+                            name="company" 
+                            id="company"
+                            required
+                            class="capitalize max-w-full max-h-14 border border-indigo-500  m-2 p-2 rounded outline-none"
+                            placeholder='company name'/>
+                    </div>
+
+                    <div class="mb-2 flex flex-col">
+                        <label for="company_description" class="capitalize m-2  text-gray-700 rounded p-1 text-left font-bold"> company description</label>
+                      
+
+                        <textarea 
+                            name="company_description" 
+                            id="company_description"
+                            required
+                            class="capitalize max-w-full max-h-14 border border-indigo-500  m-2 p-2 rounded outline-none"
+                            placeholder="what your comapny do"></textarea>
+                    </div>
+                    <div class="mb-2 flex flex-col">
+                        <label for="email" class="capitalize m-2  text-gray-700 rounded p-1 text-left font-bold">company email</label>
+                        <input 
+                            type="email"
+                            name="email" 
+                            id="email"
+                            required
+                            class="capitalize max-w-full max-h-14 border border-indigo-500  m-2 p-2 rounded outline-none"
+                            placeholder='company email '/>
+                    </div>
+                    <div class="mb-2 flex flex-col">
+                        <label for="tel" class="capitalize m-2  text-gray-700 rounded p-1 text-left font-bold">company number</label>
+                        <input 
+                            type="tel"
+                            name="tel" 
+                            id="tel"
+                            class="capitalize max-w-full max-h-14 border border-indigo-500  m-2 p-2 rounded outline-none"
+                            placeholder='company number '/>
+                    </div>
+                    <button
+                     type="button" 
+                     class="text-white h-10 m-2 rounded-md bg-indigo-800 capitalize text-xl">
+                            add job
+                    </button>
+                </form>
+            </div>
+           
+        
+            
+        </section>
+    </main>
+</body>
+</html>
